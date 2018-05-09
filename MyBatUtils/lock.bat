@@ -1,3 +1,3 @@
 @echo off
-rem µçÄÔËøÆÁ
+rem ç”µè„‘é”å±
 rundll32 user32.dll,LockWorkStation
