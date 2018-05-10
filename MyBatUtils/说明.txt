@@ -1,3 +1,4 @@
 一些常用的批处理脚本整理
 
 lock.bat  电脑锁屏
+Inetcfg.bat IE的Internet属性配置
