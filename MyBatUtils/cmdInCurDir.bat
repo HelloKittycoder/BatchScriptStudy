@@ -1,3 +1,3 @@
 @echo off
-rem 在当前目录下打开cmd
+rem 鍦ㄥ綋鍓嶇洰褰曚笅鎵撳紑cmd
 cd /d %~dp0&start
