@@ -1,2 +1,2 @@
 # BatchScriptStudy
-Windows批处理学习
+批处理学习（Windows，Linux）
