@@ -1,0 +1,1 @@
+msiexec /uninstall 7z1604-x64.msi /passive
