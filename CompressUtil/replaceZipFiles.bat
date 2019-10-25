@@ -53,7 +53,7 @@ rem ===========================变量设置end===========================
 
 rem ===========================核心处理逻辑start===========================
 rem 解压文件（当前目录是在拖过来的文件所在的目录，也就是G:\）
-call %zipApp% x -y "%originalFileAllName%" -o"%targetFileDir%\%originalFileName%"\
+call %zipApp% x -y "%originalFileAllName%" -o"%targetFileDir%\%originalFileName%\"
 
 rem 替换文件
 call:copyFiles "%newFileNames%" "%SCRIPT_DIR%\%newFilesLocation%" "%targetFileDir%\%originalFileName%\%needReplacedFilesLocation%"
@@ -62,10 +62,10 @@ rem for %%i in (%newFileNames%) do copy /y "%SCRIPT_DIR%\%newFilesLocation%\%%i"
 
 rem 重新压缩到dist文件夹
 echo %originalFileName%
-call %zipApp% a "%targetFileDir%\%originalFileAllName%" "%targetFileDir%\%originalFileName%"\
+call %zipApp% a "%targetFileDir%\%originalFileAllName%" "%targetFileDir%\%originalFileName%\"
 rem 不保留解压的文件
-rd /s /q "%targetFileDir%\%originalFileName%"
-pause
+rem rd /s /q "%targetFileDir%\%originalFileName%"
+pause&goto:eof
 rem ===========================核心处理逻辑end===========================
 
 rem ===========================自定义函数start===========================
