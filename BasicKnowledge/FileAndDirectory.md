@@ -16,7 +16,8 @@
 rd /s /q a
 5. copy 复制  
 如：把当前目录下的“a.txt”文件复制到E盘  
-copy a.txt E:\a.txt
+copy a.txt E:\a.txt  
+如果无需确认，可以写成 copy /y a.txt E:\a.txt
 6. del 删除文件  
 如：删除E盘的“a.txt”  
 是永久删除，删除后无法找回  
